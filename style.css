@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400");
+body {font-family: 'Raleway', sans-serif;}
+
+/* grid page */
+
+.parent {
+  display: grid;
+  grid-template-columns: 2fr 30px 1fr;
+  grid-template-rows: 50px auto auto auto;
+  grid-template-areas: "header header header"
+                       "main . sidebar"
+                       "section section section"
+                       "footer footer footer"
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.parent {
+  height: 90vh;
+}
+
+.grid-area {
+  background-color: #DCDCDC;
+  border-radius: 10px;
+  font: 25px;
+  border: 5px solid #fff;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .parent {
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto 50px 50px;
+    grid-template-areas: "header"     
+                         "sidebar"                   
+                         "main"
+                         "section"
+                         "footer"
+  }
+}
+
+
+
+
+/* vvv flex grid main hebergement vvv */
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.cards-main {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards_item-main {
+  display: -webkit-box;
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards_item-main {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards_item-main {
+    width: 28%;
+  }
+}
+.card-main {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  overflow: hidden;
+}
+.card-main:hover .card_image-main {
+  -webkit-filter: contrast(100%);
+          filter: contrast(100%);
+}
+.card_content-main {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding: 1rem;
+}
+.card_image-main {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-filter: contrast(70%);
+          filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card_image-main::before {
+  content: "";
+  display: block;
+  padding-top: 46.25%;
+}
+@media (min-width: 40rem) {
+  .card_image-main::before {
+    padding-top: 56.6%;
+  }
+}
+.card_image-a {
+  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+.card_image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82);
+}
+.card_image--river {
+  background-image: url(https://unsplash.it/800/600?image=11);
+}
+.card_image--record {
+  background-image: url(https://unsplash.it/800/600?image=39);
+}
+.card_image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
+}
+.card_title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card_text {
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
+/* vvv side vvv */
+
+.card-sid {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  box-shadow: rgba(12, 15, 20, 0.02) 0px 0px 0px 1px,
+    rgba(12, 15, 20, 0.06) 0px 0px 1px 0px,
+    rgba(12, 15, 20, 0.06) 0px 2px 2px 0px;
+  padding: 16px 24px;
+  max-width: 344px;
+  margin: 24px auto;
+}
+
+
+@media (min-width: 768px) {
+  .card-sid {
+    flex-direction: row;
+    max-width: 250px;
+  }
+}
+
+.image-sid {
+  height: 214px;
+  background-image: url("hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  margin: -16px -24px 24px;
+  border-radius: 4px 4px 0 0;
+}
+
+@media (min-width: 768px) {
+  .image-sid {
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 86px;
+    height: unset;
+    margin: -16px 24px -16px -24px;
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+
+.content-sid {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .content-sid {
+    width: 50%;
+  }
+  .image-sid {
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 150px;
+    height: unset;
+    margin: -4px 6px -4px -6px;
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+
+/* vvv activites vvv */
+
+.grid-acti {
+  display: grid;
+  grid-gap:20px;
+  grid-template: 80px 50px 0 50px 80px / 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+		"a b d e"
+		"a b d e"
+		"a b d f"
+    "a c d f"
+    "a c d f";
+}
+
+@media (max-width: 600px) {
+  .grid-acti {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "a"     
+                         "b"                   
+                         "c"
+                         "d"
+                         "e"
+                         "f"
+  }
+}
+
+.item1 {grid-area: a;}
+.item2 {grid-area: b;}
+.item3 {grid-area: c;}
+.item4 {grid-area: d;}
+.item5 {grid-area: e;}
+.item6 {grid-area: f;}
+.item7 {grid-area: g;}
+.item8 {grid-area: h;}
+.item9 {grid-area: i;}
+.item10 {grid-area: j;}
+.item11 {grid-area: k;}
+.item12 {grid-area: l;}
+.item13 {grid-area: m;}
+.item14 {grid-area: o;}
+
+.box-acti {
+  /*background-color: #444;*/
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+.item4 {
+  background: #000;
+}
+.item5 {
+  background: #008000;
+}
+.item6 {
+  background: #000;
+}
+
+.box-acti img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-acti {
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+  border-radius: 5px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.card-acti .thumb {
+  padding-bottom: 50%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+#itema {
+	background-image: url(activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-size : cover;
+  height : 200px;
+}
+
+#itemc {
+	background-image: url(activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  background-size : cover;
+  height: 100%;
+}
+
+.card-acti span {
+  padding: 10px;
+  bottom: 0px;
+  position: absolute;
+  background: white;
+  border-radius: 0 0 10px 10px;
+  width: 93.3%;
+}
+
+
+/* vvv star vvv */
+
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+  border-right: .3em solid transparent;
+  border-bottom: .7em  solid blue;
+  border-left: .3em solid transparent;
+  /* Controlls the size of the stars. */
+  font-size: 24px;
+}
+.star:before, .star:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: .6em;
+  left: -1em;
+  border-right: 1em solid transparent;
+  border-bottom: .7em  solid blue;
+  border-left: 1em solid transparent;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.star:after {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
