@@ -152,19 +152,19 @@ img {
   }
 }
 .card_image-a {
-  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  background-image: url(http://choisirsontheme.com/formation/ocr/p2/grid/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_image--flowers {
-  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  background-image: url(http://choisirsontheme.com/formation/ocr/p2/grid/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_image--river {
-  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  background-image: url(http://choisirsontheme.com/formation/ocr/p2/grid/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_image--record {
-  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  background-image: url(http://choisirsontheme.com/formation/ocr/p2/grid/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_image--fence {
-  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  background-image: url(http://choisirsontheme.com/formation/ocr/p2/grid/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_title {
   color: #696969;
@@ -209,7 +209,7 @@ img {
 
 .image-sid {
   height: 214px;
-  background-image: url("hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  background-image: url("http://choisirsontheme.com/formation/ocr/p2/grid/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -343,13 +343,13 @@ img {
 }
 
 #itema {
-	background-image: url(activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+	background-image: url(http://choisirsontheme.com/formation/ocr/p2/grid/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
   background-size : cover;
   height : 200px;
 }
 
 #itemc {
-	background-image: url(activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+	background-image: url(http://choisirsontheme.com/formation/ocr/p2/grid/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
   background-size : cover;
   height: 100%;
 }
