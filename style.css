@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,400");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
 body {font-family: 'Raleway', sans-serif;}
 
 /* grid page */
@@ -155,16 +155,16 @@ img {
   background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
+  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
+  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
+  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
+  background-image: url(hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .card_title {
   color: #696969;
@@ -343,7 +343,7 @@ img {
 }
 
 #itema {
-	background-image: url(activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+	background-image: url(activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
   background-size : cover;
   height : 200px;
 }
