@@ -309,8 +309,11 @@ a{
   padding: 10px 20px;
 }
 .hebe {
-  border-top: 3px solid #ccc;
+  border-top: 3px solid #fff;
   align-items: end;
+}
+.hebe:hover {
+  border-top: 3px solid #0065fc;
 }
 
 .inscri, .acti {
